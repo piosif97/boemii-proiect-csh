@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BB74790-5704-4325-B7F6-EADFA7671368}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>boemii_proiect_csh_initial</RootNamespace>
+    <AssemblyName>boemii-proiect-csh-initial</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentatie\Documentatie.doc" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="lightbox\img\demopage\.DS_Store" />
+    <Content Include="lightbox\js\.DS_Store" />
+    <Content Include="lightbox\js\jquery-1.11.0.min.map" />
+    <Content Include="lightbox\js\lightbox.min.map" />
+    <Content Include="lightbox\README.markdown" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Anna-Karenina.html" />
+    <Content Include="arta-fotografica.html" />
+    <Content Include="articole.html" />
+    <Content Include="Campanie.html" />
+    <Content Include="concursuri.html" />
+    <Content Include="Contact.html" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\ie\backgroundsize.min.htc" />
+    <Content Include="css\ie\html5shiv.js" />
+    <Content Include="css\ie\PIE.htc" />
+    <Content Include="css\ie\v8.css" />
+    <Content Include="css\images\bracket.svg" />
+    <Content Include="css\images\loader.gif" />
+    <Content Include="css\images\overlay.png" />
+    <Content Include="css\skel.css" />
+    <Content Include="css\style-1000px.css" />
+    <Content Include="css\style-desktop.css" />
+    <Content Include="css\style-mobile.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Domnisoara.html" />
+    <Content Include="Festivalul-Filmului.html" />
+    <Content Include="Filme.html" />
+    <Content Include="filme\domnisoara-christina.mp4" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="FORMULAR.html" />
+    <Content Include="images\15823480.jpg" />
+    <Content Include="images\1953.jpg" />
+    <Content Include="images\2orase.jpg" />
+    <Content Include="images\4638_2.jpg" />
+    <Content Include="images\51pLBQZ2yLL.jpg" />
+    <Content Include="images\6286_cartea_mironei1.jpg" />
+    <Content Include="images\646x404.jpg" />
+    <Content Include="images\a-tale-of-two-cities.jpg" />
+    <Content Include="images\Anna-Karenina.jpg" />
+    <Content Include="images\annak1.jpg" />
+    <Content Include="images\annaKarenina.jpg" />
+    <Content Include="images\articoltm.jpg" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\box1.jpg" />
+    <Content Include="images\box2.jpg" />
+    <Content Include="images\box3.jpg" />
+    <Content Include="images\Cartea-Mironei-14387.jpg" />
+    <Content Include="images\Cartea-Mironei.jpg" />
+    <Content Include="images\DC.jpg" />
+    <Content Include="images\Domnisoara-Christina-02-1024x553.jpg" />
+    <Content Include="images\domnisoara-christina-400499l.jpg" />
+    <Content Include="images\eruptia-732821l.jpg" />
+    <Content Include="images\Eruptia.jpg" />
+    <Content Include="images\Festivalul-Filmului-Francez-la-Timisoara-620x264.jpg" />
+    <Content Include="images\film-romanesc.jpg" />
+    <Content Include="images\GAF1.gif" />
+    <Content Include="images\GAF2.gif" />
+    <Content Include="images\GAF3.gif" />
+    <Content Include="images\giphy.gif" />
+    <Content Include="images\giphy1.gif" />
+    <Content Include="images\HOLENDER.jpg" />
+    <Content Include="images\holender1.jpg" />
+    <Content Include="images\imagine1.jpg" />
+    <Content Include="images\imagine2.jpg" />
+    <Content Include="images\imagine3.jpg" />
+    <Content Include="images\landline_covers.jpg" />
+    <Content Include="images\les-miserables-book.jpg" />
+    <Content Include="images\les-miserables-vol-1-by-victor-hugo.jpg" />
+    <Content Include="images\lesmis.jpg" />
+    <Content Include="images\madameBovary.jpg" />
+    <Content Include="images\madame_bovary.jpg" />
+    <Content Include="images\Madame_Bovary_by_Gustave_Flaubert.jpg" />
+    <Content Include="images\madame_bovary_resize.jpg" />
+    <Content Include="images\mira.jpg" />
+    <Content Include="images\miro1.png" />
+    <Content Include="images\Mirona.jpg" />
+    <Content Include="images\mirona2.jpg" />
+    <Content Include="images\mizerabilii.jpg" />
+    <Content Include="images\old-typewriter.jpg" />
+    <Content Include="images\old-typewriter1.jpg" />
+    <Content Include="images\panza-de-paianjen.jpg" />
+    <Content Include="images\panza-de-paianjen_1_produs.jpg" />
+    <Content Include="images\panzadepaianjen.jpg" />
+    <Content Include="images\panzap.jpg" />
+    <Content Include="images\parfum-film.jpg" />
+    <Content Include="images\Parfumul.jpg" />
+    <Content Include="images\parfumul1.jpg" />
+    <Content Include="images\perfume %281%29.jpg" />
+    <Content Include="images\Perfume-Book-Cover-perfume-the-story-of-a-murderer-20914424-450-691.jpg" />
+    <Content Include="images\perfume.jpg" />
+    <Content Include="images\pic01.jpg" />
+    <Content Include="images\pic02.jpg" />
+    <Content Include="images\pic03.jpg" />
+    <Content Include="images\pic04.jpg" />
+    <Content Include="images\pic05.jpg" />
+    <Content Include="images\pic06.jpg" />
+    <Content Include="images\pic07.jpg" />
+    <Content Include="images\ro-film.jpg" />
+    <Content Include="images\tale-re.jpg" />
+    <Content Include="images\tale1.jpg" />
+    <Content Include="images\tale2.jpg" />
+    <Content Include="images\the-perfume-lover-02.jpg" />
+    <Content Include="images\timisoara1.jpg" />
+    <Content Include="images\Tree-Of-Life.jpg" />
+    <Content Include="images\Tree_of_Life_Australia.jpg" />
+    <Content Include="images\tree_of_life_by_mandiemanzano-d51kv8p.jpg" />
+    <Content Include="images\writing1.jpg" />
+    <Content Include="images\yggdrasil__tree_of_life_by_alayna-d5ujj5x.jpg" />
+    <Content Include="imgalerie\large.jpg" />
+    <Content Include="imgalerie\large1.jpg" />
+    <Content Include="imgalerie\large10.jpg" />
+    <Content Include="imgalerie\large11.jpg" />
+    <Content Include="imgalerie\large2.jpg" />
+    <Content Include="imgalerie\large3.jpg" />
+    <Content Include="imgalerie\large4.jpg" />
+    <Content Include="imgalerie\large5.jpg" />
+    <Content Include="imgalerie\large6.jpg" />
+    <Content Include="imgalerie\large7.jpg" />
+    <Content Include="imgalerie\large8.jpg" />
+    <Content Include="imgalerie\large9.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\init.js" />
+    <Content Include="js\jquery.dropotron.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.poptrox.min.js" />
+    <Content Include="js\skel-layers.min.js" />
+    <Content Include="js\skel.min.js" />
+    <Content Include="Les-Mis.html" />
+    <Content Include="lightbox\css\lightbox.css" />
+    <Content Include="lightbox\css\screen.css" />
+    <Content Include="lightbox\img\close.png" />
+    <Content Include="lightbox\img\demopage\favicon.png" />
+    <Content Include="lightbox\img\demopage\image-1.jpg" />
+    <Content Include="lightbox\img\demopage\image-2.jpg" />
+    <Content Include="lightbox\img\demopage\image-3.jpg" />
+    <Content Include="lightbox\img\demopage\image-4.jpg" />
+    <Content Include="lightbox\img\demopage\image-5.jpg" />
+    <Content Include="lightbox\img\demopage\image-6.jpg" />
+    <Content Include="lightbox\img\demopage\thumb-1.jpg" />
+    <Content Include="lightbox\img\demopage\thumb-2.jpg" />
+    <Content Include="lightbox\img\demopage\thumb-3.jpg" />
+    <Content Include="lightbox\img\demopage\thumb-4.jpg" />
+    <Content Include="lightbox\img\demopage\thumb-5.jpg" />
+    <Content Include="lightbox\img\demopage\thumb-6.jpg" />
+    <Content Include="lightbox\img\large.jpg" />
+    <Content Include="lightbox\img\large1.jpg" />
+    <Content Include="lightbox\img\large10.jpg" />
+    <Content Include="lightbox\img\large11.jpg" />
+    <Content Include="lightbox\img\large2.jpg" />
+    <Content Include="lightbox\img\large3.jpg" />
+    <Content Include="lightbox\img\large4.jpg" />
+    <Content Include="lightbox\img\large5.jpg" />
+    <Content Include="lightbox\img\large6.jpg" />
+    <Content Include="lightbox\img\large7.jpg" />
+    <Content Include="lightbox\img\large8.jpg" />
+    <Content Include="lightbox\img\large9.jpg" />
+    <Content Include="lightbox\img\loading.gif" />
+    <Content Include="lightbox\img\next.png" />
+    <Content Include="lightbox\img\prev.png" />
+    <Content Include="lightbox\index.html" />
+    <Content Include="lightbox\js\jquery-1.11.0.min.js" />
+    <Content Include="lightbox\js\lightbox.js" />
+    <Content Include="lightbox\js\lightbox.min.js" />
+    <Content Include="Literatura.html" />
+    <Content Include="Madame-Bovary.html" />
+    <Content Include="Mirona.html" />
+    <Content Include="Modele-de-pagini %28aNuSeFolosiDecatPtExempleDePagini%29\left-sidebar.html" />
+    <Content Include="Modele-de-pagini %28aNuSeFolosiDecatPtExempleDePagini%29\LICENSE.txt" />
+    <Content Include="Modele-de-pagini %28aNuSeFolosiDecatPtExempleDePagini%29\no-sidebar.html" />
+    <Content Include="Modele-de-pagini %28aNuSeFolosiDecatPtExempleDePagini%29\README.txt" />
+    <Content Include="Modele-de-pagini %28aNuSeFolosiDecatPtExempleDePagini%29\right-sidebar.html" />
+    <Content Include="Pagina-principala-CARTI.html" />
+    <Content Include="Pagina-principala-CARTI2.html" />
+    <Content Include="pagina.html" />
+    <Content Include="panza.html" />
+    <Content Include="Parfumul-Carte.html" />
+    <Content Include="preia.php" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Tale.html" />
+    <Content Include="Timsonia-festival.html" />
+    <Content Include="video\Interviu cu Cristian Mungiu.mp4" />
+    <Content Include="Vremea-noilor-boemi-ART.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63725</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63725/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
