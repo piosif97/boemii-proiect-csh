@@ -13,7 +13,7 @@
 		$var_luna	= $_POST["luna"];
 		$var_ziua	= $_POST["ziua"];
 		$var_adresa	= $_POST["adresa"];
-		
+		echo "somethingmamajfhdghodsaugihdgioioarusdogyousda";
 		
 		
 		
